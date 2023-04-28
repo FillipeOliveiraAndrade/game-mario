@@ -57,6 +57,7 @@ const loopPunctuation = setInterval(() => {
 
   if (counterPunctuation === 25) {
     const message = document.querySelector('.message');
+    const codification = document.querySelector('.codification');
 
     item.classList.add('item');
     item.classList.add('polaroid');
@@ -65,6 +66,10 @@ const loopPunctuation = setInterval(() => {
     message.classList.add('item');
     message.classList.add('polaroid');
     message.classList.add('caption');
+
+    codification.classList.add('item');
+    codification.classList.add('polaroid');
+    codification.classList.add('caption');
     
     const polaroid = document.querySelector('.polaroid');
 
@@ -74,7 +79,8 @@ const loopPunctuation = setInterval(() => {
     const div = document.createElement('div');
     // div.innerHTML = 'I Miss London'
     
-    message.innerHTML = 'I miss you'
+    message.innerHTML = 'I miss you';
+    codification.innerHTML = 'É normal sentir falta de uma garota que vi só durante três dias?'
 
     polaroid.appendChild(image, div)
     item.appendChild(div);
